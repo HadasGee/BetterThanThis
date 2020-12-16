@@ -1,0 +1,186 @@
+body {background:black;}
+
+
+
+.alc:hover {
+transform:rotate(450deg);
+transition-duration: 4s;
+}
+
+.silly:hover {
+transform:rotate(2000deg);
+transition-duration: 3s;
+}
+.silly {
+	transition:transform 2s;
+	animation: vroom 4s ;
+	animation-iteration-count:infinite;
+}
+
+.peace:hover {
+transform:rotate(45deg);
+transition-duration: 2s;
+}
+
+.peace {
+	transition:transform 2s;
+	animation: vroom 4s infinite;
+}
+
+
+
+.heart:hover {
+ transform: scale(5, 5);
+transition-duration: 2s;
+}
+
+.heart {
+	transition:transform 2s;
+	animation: vroom 4s infinite;
+}
+
+.no:hover {
+transform: translate(200px, 0px);
+transition-duration: 2s;}
+.no {
+	transition:transform 2s;
+	animation: vroom 4s infinite;
+}
+
+.car:hover {
+transform: translate(-1000px, 0px);
+transition-duration: 4s;
+}
+
+.car {
+	transition:transform 0s;
+	animation: vroom 4s infinite;
+}
+
+.star1:hover {
+transform:rotate(450deg);
+transition-duration: 4s;
+}
+
+.star1 {
+	transition:transform 2s;
+	animation: vroom 4s infinite;
+}
+
+.star2:hover {
+transform: translate(500px, -500px);
+transition-duration: 4s;
+}
+
+.star2 {
+	transition:transform 0s;
+	animation: vroom 4s infinite;
+}
+
+.thumb:hover {
+transform: translate(95px, -620px);
+transition-duration: 2s;}
+.thumb {
+	transition:transform 1s;
+	animation: vroom 4s infinite;
+}
+
+.monkey:hover {
+ transform: scale(.3, .3);
+transition-duration: 2s;
+}
+.monkey{
+	transition:transform 2s;
+	animation: vroom 4s infinite;
+}
+
+.cursor {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	transform: transalte(-50%, -50%);
+	border:2px solid white;
+	border-radius: 50%;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	animation: cursorAnim .5s infinite alternate;
+}
+
+.cursor::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border: 8px solid gray;
+	border-radius: 50%;
+	opacity:.5 ;
+	top: -8px;
+	left: -8px;
+	animation: cursorAnim2 .5s infinite alternate ;
+}
+
+@keyframes cursorAnim {
+	from {
+		transform: scale(1);
+	}
+	to{
+		transform: scale(.7);
+	}
+}
+
+@keyframes cursorAnim2 {
+	from {
+		transform: scale(1);
+	}
+	to{
+		transform: scale(.4);
+	}
+}
+
+@keyframes cursorAnim3 {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(3);
+		}
+	
+	100% {
+		transform: scale(1)
+		opacity: 0;
+	}
+}
+
+.expand{
+	animation: cursorAnim3 .5s forwards;
+	border: .5px solid orange;
+}
+
+h2 {color:white;
+	font-size:24px;
+		text-align:center;
+	font-family:futura;
+	font-style: bold;
+}
+p {
+		font-size:15px;
+		color:white;
+		font-family:futura;
+		text-align:center;
+	} 
+
+	a { color: yellow; }
+	.lastnight {color:magenta;}
+	.OS {color:aquamarine;}
+	.Silk {color:orange;}
+	.like {color:pink;}
+	.nothin {color:royalblue;}
+	.cant {color:red;}
+	}
+
+@keyframes vroom {
+	0% {top:0;left:0;}
+	50% {top:0; left:90vw;}
+	75% {top:80vh; left:0;}
+	100% { top:80vh; left:90vw; }
+}
